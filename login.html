@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Laundry Express</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="container">
+    <input type="checkbox" id="check">
+    <div class="login form">
+      <header>Sign In</header>
+      <form action="#">
+        <input type="text" placeholder="Ketik email Anda">
+        <input type="password" placeholder="Ketik password Anda">
+        <a href="#">Lupa password?</a>
+        <input type="button" class="button" value="Sign In" onclick="redirectToIndex()">
+      </form>
+      <div class="signup">
+        <span class="signup">Belum punya akun?
+         <label for="check">Sign Up</label>
+        </span>
+      </div>
+    </div>
+    <div class="registration form">
+      <header>Sign Up</header>
+      <form action="#">
+        <input type="text" placeholder="Ketik email Anda">
+        <input type="password" placeholder="Ketik password">
+        <input type="password" placeholder="Konfirmasi password">
+        <input type="button" class="button" value="Sign Up" onclick="refreshPage()">
+      </form>
+      <div class="signup">
+        <span class="signup">Sudah punya akun?
+         <label for="check">Sign In</label>
+        </span>
+      </div>
+    </div>
+  </div>
+  <script>
+    function redirectToIndex() {
+        window.location.href = "index.html"; 
+    }
+
+    function refreshPage() {
+        window.location.reload(); 
+    }
+  </script>
+</body>
+</html>
